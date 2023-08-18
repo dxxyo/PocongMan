@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG 2 Bumi Denpasar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio autoplay>
+        <source src="assets/bgm.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="death-sound">
+        <source src="./assets/dead.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+        
+ 
+    <div class="score font-semibold text-2xl text-red-600 w-screen text-center absolute top-10" style="font-family: 'Rock Salt', cursive;" id="score"></div>    
+    <div id="road-background"></div>
+    <div id="road-background-2"></div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+    <img class="human top-0 left-10 " src="./assets/human.gif" id="human">
+
+    <div class="ghost" id="ghost"></div>
+    <div class="bat" id="bat"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
