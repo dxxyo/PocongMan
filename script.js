@@ -1,6 +1,7 @@
 const human = document.getElementById('human');
 const playerScore = document.getElementById('score');
 const deathSound = document.getElementById("death-sound");
+const jumpSound = document.getElementById("jump-sound");
 
 
 let score = 0;
@@ -11,6 +12,9 @@ human.addEventListener('mouseover', () => {
     canTriggerEvent = false;
 
     human.style.top = '-250px'; // loncatin si mobilnya sebanyak 30 0px
+    jumpSound.currentTime = 0; // Rewind the audio to the beginning
+    jumpSound.volume = 0.5
+    jumpSound.play()
 
     setTimeout(() => {
       human.style.top = '0px'; //jatuhin lagi mobilnya ke tempat semula
@@ -31,11 +35,11 @@ let hasExecuted = false;
 function checkCollision() {
     const humanRect = human.getBoundingClientRect();
     const ghostRect = ghost.getBoundingClientRect();
-    console.log(humanRect.left, ghostRect.right)
+    //console.log(humanRect.left, ghostRect.right)
   
     if (humanRect.right - 50 > ghostRect.left + 10 && humanRect.bottom > ghostRect.top && humanRect.left + 50 <  ghostRect.right - 10 && !hasExecuted) 
     {
-          // Create an overlay element
+          // blur overlay
         const overlay = document.createElement("div");
         overlay.style.position = "fixed";
         overlay.style.top = "0";
@@ -46,7 +50,6 @@ function checkCollision() {
         overlay.style.backdropFilter = "blur(10px)";
         overlay.style.zIndex = "2";
 
-        // Append the overlay to the body
         document.body.appendChild(overlay);
 
         Swal.fire({
@@ -73,3 +76,6 @@ setInterval(() => {
     playerScore.innerHTML = `Score : ${score} `;
     checkCollision();
 }, 100)
+
+
+

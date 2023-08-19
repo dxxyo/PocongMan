@@ -1,0 +1,33 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocong Man</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-gray-800 to-black w-screen h-screen flex flex-col justify-center items-center" style="font-family: 'Just Me Again Down Here', cursive;">
+    <a href="./" class="text-9xl text-red-600">Pocong Man</a>
+
+    <div class="w-screen h-full">
+        <div class="flex items-center w-screen justify-center text-5xl text-white mt-16">
+            <h1 class="mr-16">Ghost :</h1>
+            <button onclick="pocongback()"><</button>
+            <img src="./assets/pocong/1.png" class="w-36" id="pocong-img">
+            <button onclick="pocongnext()">></button>
+        </div>
+        <div class="flex items-center w-screen justify-center text-5xl text-white mt-16">
+            <h1 class="mr-16">Human :</h1>
+            <button onclick="humanBack()"><</button>
+            <img src="./assets/manusia/1.gif" class="w-36" id="human">
+            <button onclick="humanNext()">></button>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+
+</body>
+</html>
