@@ -37,7 +37,7 @@ function checkCollision() {
     const ghostRect = ghost.getBoundingClientRect();
     //console.log(humanRect.left, ghostRect.right)
   
-    if (humanRect.right - 50 > ghostRect.left + 10 && humanRect.bottom > ghostRect.top && humanRect.left + 50 <  ghostRect.right - 10 && !hasExecuted) 
+    if (humanRect.right - 50 > ghostRect.left + 10 && humanRect.bottom > ghostRect.top + 50 && humanRect.left + 50 <  ghostRect.right - 10 && !hasExecuted) 
     {
           // blur overlay
         const overlay = document.createElement("div");

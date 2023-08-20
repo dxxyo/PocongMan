@@ -10,7 +10,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: url('./assets/bg.jpg');
+    background-image: url('./assets/bg.png');
     background-size: cover;
     animation: scrollLeft 5s linear infinite;
   }
@@ -22,7 +22,7 @@ body {
       top: 0;
       left: 0; 
       z-index: -1;
-      background-image: url('./assets/bg.jpg');
+      background-image: url('./assets/bg.png');
       background-size: cover;
       animation: scrollLeft2 5s linear infinite;
     }
@@ -47,9 +47,9 @@ body {
         width: 200px;
         height: 200px;
         background-image: url('./assets/pocong/1.png');
-        background-size: cover;
+        background-size: 200px 200px;
         position: absolute;
-        top: 72%;
+        top: 67%;
         right: -50px; /*Mulai dari kanan */
         animation: ghostMove 5s linear infinite; /* Durasi animasi */
       }

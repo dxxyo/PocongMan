@@ -15,17 +15,18 @@ function pocongback(){
     } else {
         pocong_src = 3
     }
-    sessionStorage.setItem('pocongimg', "./assets/pocong/" + pocong_src + ".png");
-    pocong.src = sessionStorage.getItem('pocongimg')
+    console.log(pocong_src)
+    sessionStorage.setItem('pocongimg', "./assets/pocong/" + pocong_src + ".gif");
+    pocong_img.src = sessionStorage.getItem('pocongimg')
 }
 
 function pocongnext(){
-    if(pocong_src < 3){
+    if(pocong_src < 4){
         pocong_src++
     } else {
         pocong_src = 1
     }
-    sessionStorage.setItem('pocongimg', "./assets/pocong/" + pocong_src + ".png");
+    sessionStorage.setItem('pocongimg', "./assets/pocong/" + pocong_src + ".gif");
     pocong_img.src = sessionStorage.getItem('pocongimg') 
 }
 
@@ -35,7 +36,6 @@ function humanBack(){
     } else {
         manusia_src = 3
     }
-    console.log(manusia_src)
     sessionStorage.setItem('humanimg', "./assets/manusia/" + manusia_src + ".gif");
     manusia_img.src = sessionStorage.getItem('humanimg')
 }
