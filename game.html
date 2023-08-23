@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body >
     <audio autoplay>
-        <source src="assets/bgm.mp3" type="audio/mpeg">
+      <source src="assets/bgm.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+    <audio autoplay>
+      <source src="assets/breath.mpeg" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <audio autoplay>
+      <source src="assets/foot.mpeg" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+
     <audio id="death-sound">
         <source src="./assets/dead.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -23,12 +34,18 @@
         <source src="./assets/jump.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
+      <audio id="land-sound">
+        <source src="./assets/land.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
         
         
-    <a href="index.html" class="px-3 py-2 text-red-200 bg-red-600 text-md absolute top-8 left-10 rounded-md z-50" style="font-family: 'Rock Salt', cursive;"> Home </a>
-    <div class="score font-semibold z-10 text-2xl text-red-600 w-screen text-center absolute top-10" style="font-family: 'Rock Salt', cursive;" id="score"></div>    
+    <a href="index.html" class="px-3 py-2 text-red-200 bg-red-600 text-md absolute top-8 left-10 rounded-md z-50" style="font-family: 'Press Start 2P', cursive;"> Home </a>
+    <div class="score font-semibold z-10 text-2xl text-red-600 w-screen text-center absolute top-10" style="font-family: 'Press Start 2P', cursive;" id="score"></div>    
     <div id="road-background"></div>
     <div id="road-background-2"></div>
+    <div class="blood"></div>
+
 
 
    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br>

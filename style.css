@@ -73,3 +73,13 @@ body {
         }
       }
       
+      .blood {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-image: url('./assets/blood.gif');
+        background-size: cover;
+        display: none;
+        z-index: 50;
+      }
+      

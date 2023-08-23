@@ -7,29 +7,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-b from-gray-800 to-black w-screen h-max pb-10 flex flex-col justify-center items-center" style="font-family: 'Just Me Again Down Here', cursive;">
-    <h1 class="text-9xl text-red-600">Choose your character</h1>
-
+<body class="bg-gradient-to-b from-gray-800 to-black w-screen h-max pb-10 flex flex-col justify-center items-center" style="font-family: 'Press Start 2P', cursive;">
+    <h1 class="text-3xl text-red-600 mt-10">Choose your character</h1>
     <div class="w-screen flex flex-col items-center h-full">
         <div class="flex items-center w-screen justify-center text-5xl text-white mt-16">
-            <h1 class="mr-16">Ghost :</h1>
-            <button onclick="pocongback()"><</button>
+            <h1 class="mr-16 text-xl">Ghost :</h1>
+            <button onclick="pocongback()" class=" text-xl"><</button>
             <img src="./assets/pocong/1.gif" class="w-36" id="pocong-img">
-            <button onclick="pocongnext()">></button>
+            <button onclick="pocongnext()" class=" text-xl">></button>
         </div>
         <div class="flex items-center w-screen justify-center text-5xl text-white mt-16">
-            <h1 class="mr-16">Human :</h1>
-            <button onclick="humanBack()"><</button>
+            <h1 class="mr-16 text-xl">Human :</h1>
+            <button onclick="humanBack()" class=" text-xl"><</button>
             <img src="./assets/manusia/1.gif" class="w-36" id="human">
-            <button onclick="humanNext()">></button>
+            <button onclick="humanNext()" class=" text-xl">></button>
         </div>
-        <div class="flex space-x-10">
-            <a href="./" class="py-1 w-max px-5 mt-10 text-lg hover:shadow-lg hover:shadow-red-800 transition-all duration-300 bg-red-600 text-white">
+        <div class="flex space-x-10 mt-16">
+            <a href="./" class="py-2 text-sm w-max px-5 hover:shadow-lg hover:shadow-red-800 transition-all duration-300 bg-red-600 text-white">
                 < Back
             </a>
-            <a href="game.html" class="py-1 w-max px-5 mt-10 text-lg hover:shadow-lg hover:shadow-gray-400 transition-all duration-300 bg-white ">
+            <a href="game.html" class="py-2 text-sm w-max px-5 hover:shadow-lg hover:shadow-gray-400 transition-all duration-300 bg-white ">
                 Start >
             </a>
         </div>
