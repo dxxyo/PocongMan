@@ -16,11 +16,11 @@
       Your browser does not support the audio element.
     </audio>
     <audio autoplay>
-      <source src="assets/breath.mpeg" type="audio/mpeg">
+      <source src="assets/breath.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <audio autoplay>
-      <source src="assets/foot.mpeg" type="audio/mpeg">
+      <source src="assets/foot.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
 
@@ -52,16 +52,6 @@
     <img class="human top-0 left-10 " src="./assets/manusia/1.gif" id="human">
     <div class="ghost" id="ghost"></div>
     <div class="bat" id="bat"></div>
-
-    <script>
-        var humansrc = sessionStorage.getItem('humanimg');
-        const manusia_img = document.getElementById('human')
-        manusia_img.src = humansrc
-
-        var ghostsrc = sessionStorage.getItem('pocongimg');
-        const ghost_img = document.getElementById('ghost')
-        ghost_img.style.backgroundImage = 'url(' + ghostsrc + ')'
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>

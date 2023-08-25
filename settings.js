@@ -7,6 +7,8 @@ const manusia_img = document.getElementById('human')
 let pocong_src = 1
 let manusia_src = 1
 
+sessionStorage.setItem('pocongimg', pocong_src) 
+sessionStorage.setItem('humanimg', manusia_src) 
 
 
 function pocongback(){
@@ -15,9 +17,8 @@ function pocongback(){
     } else {
         pocong_src = 3
     }
-    console.log(pocong_src)
-    sessionStorage.setItem('pocongimg', "./assets/pocong/" + pocong_src + ".gif") 
-    pocong_img.src = sessionStorage.getItem('pocongimg')
+    sessionStorage.setItem('pocongimg', pocong_src) 
+    pocong_img.src =  "./assets/pocong/" + sessionStorage.getItem('pocongimg') + ".gif"
 }
 
 function pocongnext(){
@@ -26,8 +27,8 @@ function pocongnext(){
     } else {
         pocong_src = 1
     }
-    sessionStorage.setItem('pocongimg', "./assets/pocong/" + pocong_src + ".gif") 
-    pocong_img.src = sessionStorage.getItem('pocongimg') 
+    sessionStorage.setItem('pocongimg', pocong_src) 
+    pocong_img.src =  "./assets/pocong/" + sessionStorage.getItem('pocongimg') + ".gif"
 }
 
 function humanBack(){
@@ -36,8 +37,8 @@ function humanBack(){
     } else {
         manusia_src = 3
     }
-    sessionStorage.setItem('humanimg', "./assets/manusia/" + manusia_src + ".gif") 
-    manusia_img.src = sessionStorage.getItem('humanimg')
+    sessionStorage.setItem('humanimg', manusia_src) 
+    manusia_img.src = "./assets/manusia/" + sessionStorage.getItem('humanimg') + ".gif"
 }
 
 function humanNext(){
@@ -46,8 +47,8 @@ function humanNext(){
     } else {
         manusia_src = 1
     }
-    sessionStorage.setItem('humanimg', "./assets/manusia/" + manusia_src + ".gif") 
-    manusia_img.src = sessionStorage.getItem('humanimg')
+    sessionStorage.setItem('humanimg', manusia_src) 
+    manusia_img.src = "./assets/manusia/" + sessionStorage.getItem('humanimg') + ".gif"
 }
 
 
